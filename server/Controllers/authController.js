@@ -6,7 +6,7 @@ import bcrypt from "bcrypt";
 // Requiring all the important modules
 import CustomError from "../Utils/CustomError.js";
 import User from "../models/UserModel.js";
-import getTokenAndResponse from "../utils/generateTokenAndResponse.js";
+import getTokenAndResponse from "../Utils/generateTokenAndResponse.js";
 import catchAsync from "../Utils/catchAsync.js";
 import sendMail from "../services/sendMail.js";
 import { ObjectId } from "mongodb";
