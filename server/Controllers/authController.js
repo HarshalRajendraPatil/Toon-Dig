@@ -135,7 +135,7 @@ const resetPassword = catchAsync(async (req, res, next) => {
 const logout = (req, res, next) => {
   // Setting the value of jwt cookie to an empty string and then destroying the cookie in 1 ms followed by redirecting the user to the home page.
   res
-    .cookie("jwt", "", { maxAge: 0 })
+    .cookie("jwt", "", { maxAge: 0, secure: true, sameSite: "None" })
     .json({ status: "success", message: "User logged out" });
 };
 
