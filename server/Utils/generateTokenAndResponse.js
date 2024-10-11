@@ -10,7 +10,8 @@ const getTokenAndResponse = (res, user) => {
   res
     .cookie("jwt", token, {
       maxAge: process.env.COOKIE_EXPIRES,
-      httpOnly: true,
+      secure: true,
+      sameSite: "None",
     })
     .status(200)
     .json({
