@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes, FaCaretDown } from "react-icons/fa";
 import { useDispatch } from "react-redux";
-import { clearUser } from "../store/slices/userSlice";
+import { clearUser, setError } from "../store/slices/userSlice";
 import axiosInstance from "../config/axiosConfig";
 import { toast } from "react-toastify";
 
