@@ -27,7 +27,7 @@ router.post("/forgot-password", forgotPassword);
 router.post("/reset-password", resetPassword);
 
 // Route for GET request on "/logout" link
-router.post("/logout", isLoggedIn, logout);
+router.post("/logout", logout);
 
 // Exporting the router
 export default router;
